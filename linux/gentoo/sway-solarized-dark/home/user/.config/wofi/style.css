@@ -1,0 +1,61 @@
+@define-color cyan #2aa198;
+@define-color primary #073642;
+@define-color header #094758;
+
+window {
+  font-size: 24px;
+  font-family: Noto Sans;
+  background-color: @primary;
+  color: white;
+  border-radius: 4px;
+}
+
+#input {
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: @header;
+  border-style: none;
+  box-shadow: none;
+  border-radius: 4px 4px 0 0;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+#input > image {
+  padding: 0 15px;
+}
+
+#inner-box {
+  background: transparent;
+}
+
+#scroll > scrollbar {
+  background: transparent;
+  border-style: none;
+}
+
+#text {
+  padding-left: 12px;
+}
+
+#entry {
+  margin: 0 8px 8px 8px;
+  padding: 8px 8px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#entry:selected {
+  background: @cyan;
+  border-radius: 4px;
+  outline: none;
+}
+
+#entry image {
+  margin-left: 4px;
+}
+
+#entry list {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-radius: 4px;
+  background-color: #002b36;
+}

@@ -1,0 +1,35 @@
+font pango:Noto Sans 14
+
+title_align center
+
+hide_edge_borders smart
+# smart_gaps on
+
+default_border normal 1
+
+# gaps inner 8
+
+# Blocks
+set $selected #094858
+set $deselected #586e75
+set $inactive #4f6369
+set $text #ffffff
+
+set $red #dc322f
+set $orange #cb4b16
+set $yellow #b58900
+set $green #859900
+set $cyan #2aa198
+set $blue #268bd2
+set $violet #6c71c4
+set $magenta #d33682
+
+set $opacity CC
+
+# class                 border          background      text      indicator       child_border
+client.focused          $selected       $selected       $text     $selected       $selected
+client.focused_inactive $deselected     $deselected     $text     $deselected     $deselected
+client.unfocused        $inactive       $inactive       $text     $inactive       $inactive
+client.urgent           $yellow         $yellow         $text     $yellow         $yellow
+# client.placeholder
+

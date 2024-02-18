@@ -1,0 +1,24 @@
+# Wayland login daemon and greeter service
+gui-libs/greetd
+gui-apps/tuigreet
+
+# Wayland compositor
+gui-wm/sway
+
+# Backlight control
+dev-libs/light
+
+# Minimalist terminal emulator
+gui-apps/foot
+
+# Wallpaper utility
+gui-apps/swaybg
+
+# Status bar
+gui-apps/waybar
+
+# Application launcher
+gui-apps/wofi
+
+# Icons
+media-fonts/fontawesome

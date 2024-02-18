@@ -1,0 +1,13 @@
+# Essential terminal toolkit
+dev-vcs/git
+app-editors/neovim
+app-containers/docker
+app-containers/docker-compose
+sys-cluster/kubectl
+app-admin/helm
+
+# Applications
+dev-db/dbeaver-bin
+
+# Utilities
+dev-python/virtualenv

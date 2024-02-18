@@ -1,0 +1,6 @@
+alias calsync="rclone bisync remote:Calibre ~/Calibre --remove-empty-dirs"
+alias calresync="rclone bisync remote:Calibre ~/Calibre --resync --verbose"
+
+alias vim="nvim"
+
+alias rm='rm -iv'

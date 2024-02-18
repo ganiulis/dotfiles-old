@@ -1,0 +1,130 @@
+* {
+  font-family:
+    Noto Sans Condensed,
+    serif;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+window#waybar {
+  background: transparent;
+}
+
+/* window#waybar.hidden { */
+/* opacity: 0.2; */
+/* } */
+
+button {
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
+}
+
+button:hover {
+  background: inherit;
+  box-shadow: inherit;
+}
+
+#workspaces button {
+  padding: 0 20px;
+  border-radius: 4px;
+  margin: 4px 2px;
+}
+
+#workspaces button:not(.focused):hover {
+  background: rgba(42, 161, 152, 0.4);
+}
+
+#workspaces button.focused {
+  background: rgba(42, 161, 152, 1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+#workspaces button.urgent {
+  background: #cb4b16;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+#battery,
+#cpu,
+#disk,
+#memory,
+#temperature,
+#backlight,
+#pulseaudio,
+#idle_inhibitor,
+#network,
+#clock,
+#custom-weather,
+#mode,
+#scratchpad,
+#language {
+  padding: 0 14px;
+  border-radius: 4px;
+  margin: 4px 2px;
+}
+
+#idle_inhibitor.activated {
+  background: #268bd2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+#scratchpad {
+  background: #6c71c4;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+#mode {
+  background: #d33682;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 200% 100%;
+  }
+}
+
+#battery.charging {
+  background: linear-gradient(90deg, #cb4b16, #859900, #cb4b16);
+  background-size: 200% 100%;
+  animation: gradient 3s linear infinite;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+#battery.plugged {
+  background: #859900;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes alert {
+  to {
+    background: #dc322f;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  }
+}
+
+#battery.critical:not(.charging) {
+  animation-name: alert;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#temperature.critical {
+  animation-name: alert;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

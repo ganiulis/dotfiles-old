@@ -1,0 +1,7 @@
+# Utilities
+net-misc/chrony
+net-misc/dhcpcd
+net-wireless/bluez
+net-wireless/iw
+net-wireless/wpa_supplicant
+www-client/firefox
