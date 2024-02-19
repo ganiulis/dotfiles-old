@@ -1,5 +1,7 @@
 # Introduction
 
+Inspired by the various configuration options shared in [r/unixporn](https://www.reddit.com/r/unixporn/) and [the unofficial guide to dotfiles on GitHub](https://dotfiles.github.io).
+
 A collection of directories and files meant to serve as templates for my
 machines.
 
@@ -18,4 +20,3 @@ Future templates (which I may or may not do):
 1. [Linux From Scratch](https://www.linuxfromscratch.org/)
    (`linux/linux-from-scratch/...`)
 2. [macOS Sonoma](https://www.apple.com/macos/sonoma/) (`macos/sonoma`)
-
