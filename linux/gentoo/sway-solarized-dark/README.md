@@ -9,9 +9,10 @@ Inspired by the [MacOS Sonoma](https://www.apple.com/macos/sonoma/) interface.
 
 # Configurations
 
-Terminal:
+Terminal utilities:
 
 1. Shell: [Zsh](https://www.zsh.org) with [zplug](http://zplug.github.io)
+2. Text editor: [Neovim](https://neovim.io)
 
 Wayland-specific applications:
 
@@ -21,7 +22,7 @@ Wayland-specific applications:
 
 Development tools:
 
-1. [NvChad](https://nvchad.com)
+1. IDE: [NvChad](https://nvchad.com)
 
 ToDo:
 
