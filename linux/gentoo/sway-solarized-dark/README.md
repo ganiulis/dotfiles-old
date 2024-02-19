@@ -27,6 +27,6 @@ Development tools:
 ToDo:
 
 - [ ] Add build instructions, if any.
+- [ ] Add a bash script to symlink all configs.
 - [ ] Add missing root directory files.
-- [ ] Add list of used applications and use-cases.
 - [ ] Add requirements, if any.
