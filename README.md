@@ -18,3 +18,4 @@ Future templates (which I may or may not do):
 1. [Linux From Scratch](https://www.linuxfromscratch.org/)
    (`linux/linux-from-scratch/...`)
 2. [macOS Sonoma](https://www.apple.com/macos/sonoma/) (`macos/sonoma`)
+
