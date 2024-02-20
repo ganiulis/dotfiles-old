@@ -20,10 +20,6 @@ Wayland-specific applications:
 2. Application launcher: [Wofi](https://hg.sr.ht/~scoopta/wofi)
 3. Terminal emulator: [foot](https://codeberg.org/dnkl/foot)
 
-Development tools:
-
-1. IDE: [NvChad](https://nvchad.com)
-
 ToDo:
 
 - [ ] Add build instructions, if any.

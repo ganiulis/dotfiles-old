@@ -1,6 +1,8 @@
 # Introduction
 
-Inspired by the various configuration options shared in [r/unixporn](https://www.reddit.com/r/unixporn/) and the [unofficial guide to dotfiles on GitHub](https://dotfiles.github.io).
+Inspired by the various configuration options shared in
+[r/unixporn](https://www.reddit.com/r/unixporn/) and the
+[unofficial guide to dotfiles on GitHub](https://dotfiles.github.io).
 
 A collection of directories and files meant to serve as templates for my
 machines.
@@ -10,6 +12,10 @@ customization or lists of packages.
 
 To keep each template consistent, I pull this repository and `ln -s ...`
 specific directories and files.
+
+Complete templates:
+
+- [Linux](linux/common)
 
 Incomplete templates:
 
