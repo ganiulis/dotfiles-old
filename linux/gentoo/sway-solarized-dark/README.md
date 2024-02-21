@@ -9,11 +9,6 @@ Inspired by the [MacOS Sonoma](https://www.apple.com/macos/sonoma/) interface.
 
 # Configurations
 
-Terminal utilities:
-
-1. Shell: [Zsh](https://www.zsh.org)
-2. Text editor: [Neovim](https://neovim.io)
-
 Wayland-specific applications:
 
 1. Bar: [Waybar](https://github.com/Alexays/Waybar)
