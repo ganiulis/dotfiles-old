@@ -14,10 +14,3 @@ Wayland-specific applications:
 1. Bar: [Waybar](https://github.com/Alexays/Waybar)
 2. Application launcher: [Wofi](https://hg.sr.ht/~scoopta/wofi)
 3. Terminal emulator: [foot](https://codeberg.org/dnkl/foot)
-
-ToDo:
-
-- [ ] Add build instructions, if any.
-- [ ] Add a bash script to symlink all configs.
-- [ ] Add missing root directory files.
-- [ ] Add requirements, if any.
