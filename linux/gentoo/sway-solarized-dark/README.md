@@ -11,7 +11,7 @@ Inspired by the [MacOS Sonoma](https://www.apple.com/macos/sonoma/) interface.
 
 Terminal utilities:
 
-1. Shell: [Zsh](https://www.zsh.org) with [zplug](http://zplug.github.io)
+1. Shell: [Zsh](https://www.zsh.org)
 2. Text editor: [Neovim](https://neovim.io)
 
 Wayland-specific applications:
