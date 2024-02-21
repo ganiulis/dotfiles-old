@@ -38,7 +38,7 @@ Setting up a functional system is a three-step process (system files, distributi
 1. Find your system and distribution (eg.: [linux]() and [linux/gentoo]()).
 3. Symlink or copy files from `{system}/{distribution}/common` (eg.: [linux/gentoo/common]()) to your system, matching the directory.
 4. Symlink or copy files from `{system}/common` (eg.: [linux/common]()) to your system, matching the directory.
-5. Choose a flavour` for your GUI (eg.: [linux/gentoo/sway-solarized-dark]()).
+5. Choose a flavour for your GUI (eg.: [linux/gentoo/sway-solarized-dark]()).
 6. Symlink or copy files from `{system}/{distribution}/{flavour}` directory to your system, matching the directory.
 
 You can omit any specific configuration file or directory if you know what you're doing.
