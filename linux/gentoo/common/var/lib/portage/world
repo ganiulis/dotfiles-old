@@ -1,0 +1,11 @@
+app-eselect/eselect-repository
+app-portage/cpuid2cpuflags
+app-portage/gentoolkit
+sys-apps/dbus
+sys-boot/efibootmgr
+sys-boot/refind
+sys-firmware/intel-microcode
+sys-fs/xfsprogs
+sys-kernel/gentoo-kernel
+sys-kernel/installkernel
+sys-kernel/linux-firmware

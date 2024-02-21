@@ -4,4 +4,11 @@ net-misc/dhcpcd
 net-wireless/bluez
 net-wireless/iw
 net-wireless/wpa_supplicant
-www-client/firefox
+
+# Sound
+media-video/pipewire
+
+# Administrative
+app-shells/zsh
+app-admin/sudo
+dev-vcs/git
