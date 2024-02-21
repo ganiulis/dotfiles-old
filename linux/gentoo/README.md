@@ -10,5 +10,5 @@ There are four world sets: `apps`, `dev`, `sys`, and a `gui` for each flavour.
 
 # Instructions
 
-1. Symlink (`ln -s ...`, or alternatively `cp ... ...`) everything from `common`. This is the base.
+1. Symlink (`ln -s ...`, or alternatively `cp ... ...`) everything from [common](common). These are the bare essentials.
 2. Symlink (`ln -s ...`, or alternatively `cp ... ...`) everything else from a selected directory, such as `sway-solarized-dark`.
