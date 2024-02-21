@@ -19,7 +19,7 @@ Complete templates:
 
 Incomplete templates:
 
-- [Gentoo Linux (in Solarized Dark)](linux/gentoo/sway-solarized-dark)
+- [Gentoo Linux](linux/gentoo)
 
 Future templates (which I may or may not do):
 
