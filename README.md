@@ -36,9 +36,9 @@ Each directory is meant to serve as a building block towards a single working sy
 Setting up a functional system is a three-step process (system files, distribution files, and flavour files). Each top-level system directory includes a `README.md` to describe what's included:
 
 1. Find your system and distribution (eg.: [linux]() and [linux/gentoo]()).
-3. Symlink or copy files from `{system}/{distribution}/common` (eg.: [linux/gentoo/common]()) to your system, matching the directory.
-4. Symlink or copy files from `{system}/common` (eg.: [linux/common]()) to your system, matching the directory.
+3. Symlink (`ln -s ...`) or copy files (`cp ... ...`) from `{system}/{distribution}/common` (eg.: [linux/gentoo/common]()) to your system, matching the directory.
+4. Symlink (`ln -s ...`) or copy files (`cp ... ...`) from `{system}/common` (eg.: [linux/common]()) to your system, matching the directory.
 5. Choose a flavour for your GUI (eg.: [linux/gentoo/sway-solarized-dark]()).
-6. Symlink or copy files from `{system}/{distribution}/{flavour}` directory to your system, matching the directory.
+6. Symlink (`ln -s ...`) or copy files (`cp ... ...`) from `{system}/{distribution}/{flavour}` directory to your system, matching the directory.
 
 You can omit any specific configuration file or directory if you know what you're doing.
