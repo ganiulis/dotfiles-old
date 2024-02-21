@@ -6,7 +6,7 @@ There are four world sets: `apps`, `dev`, `sys`, and a `gui` for each flavour.
 
 # Available Flavours
 
-1. [Sway (Solarized Dark)](linux/gentoo/sway-solarized-dark)
+1. [Sway (Solarized Dark)](sway-solarized-dark)
 
 # Instructions
 
