@@ -20,14 +20,7 @@ Complete templates:
 1. [Linux](linux/common)
 2. [Gentoo Linux](linux/gentoo)
 
-Future templates (which I may or may not do):
-
-1. [Linux From Scratch](https://www.linuxfromscratch.org/)
-2. [macOS Sonoma](https://www.apple.com/macos/sonoma/)
-3. [SteamOS](https://store.steampowered.com/steamos)
-4. [FreeBSD](https://www.freebsd.org)
-5. [Alpine Linux](https://www.alpinelinux.org)
-6. [Debian Linux](https://www.debian.org)
+Future templates (which I may or may not do) are written-up as [milestones](https://github.com/ganiulis/dotfiles/milestones).
 
 # Instructions
 
