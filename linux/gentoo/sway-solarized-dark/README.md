@@ -1,6 +1,6 @@
 # Introduction
 
-My [Sway](https://swaywm.org) setup for keyboard-centric development.
+My [Sway](https://swaywm.org) setup for keyboard-centric development. Built and tested on a Lenovo ThinkPad P52.
 
 Themed around [Solarized Dark](https://ethanschoonover.com/solarized/) with some
 extra colors.
