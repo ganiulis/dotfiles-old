@@ -32,10 +32,10 @@ Setting up a functional system is a three-step process (system files, distributi
 ## New Way
 
 1. Find your system and distribution (eg.: [linux]() and [linux/gentoo]()).
-2. Run scripts instructed by `{system}/{distribution}/common/README.md` (eg.: [linux/gentoo/common]()), if one exists.
-3. Run scripts instructed by `{system}/common/README.md` (eg.: [linux/common]()).
+2. Run scripts instructed by `{system}/{distribution}/common/README.md` (eg.: [linux/gentoo/common/README.md]()), if one exists.
+3. Run scripts instructed by `{system}/common/README.md` (eg.: [linux/common/README.md]()).
 4. Choose a flavour for your GUI (eg.: [linux/gentoo/sway-solarized-dark]()), if one exists.
-5. Run scripts instructed by `{system}/{distribution}/{flavour}/README.md` (eg.: [linux/gentoo/sway-solarized-dark]()), if one exists.
+5. Run scripts instructed by `{system}/{distribution}/{flavour}/README.md` (eg.: [linux/gentoo/sway-solarized-dark/README.md]()), if one exists.
 
 ## Old Way
 
