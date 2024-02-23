@@ -10,7 +10,9 @@ There are scripts which link the required configuration files together:
 2. Create links for the config with `ln-{config}.sh`.
 3. Check if the symlink has been created and if any previous configs are stored away.
 
+Alternatively, use `cp-{config].sh` to copy files instead of symlinking them.
+
 # Configurations
 
-1. Shell: [Fish](https://fishshell.com) (`ln-fish.sh`)
+1. Shell: [Fish](https://fishshell.com) (`{cmd}-fish.sh`)
 
