@@ -28,3 +28,9 @@ for APP in .config/foot .config/sway .config/waybar .config/wofi .local/share/ap
   	echo 'Symlinked configs for '$TARGET_DIR
   fi
 done
+
+mkdir -p ~/Wallpapers
+
+cp $SCRIPT_DIR/home/user/Wallpapers/* ~/Wallpapers/
+
+echo 'Copied wallpapers'
