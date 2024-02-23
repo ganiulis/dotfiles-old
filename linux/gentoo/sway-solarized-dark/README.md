@@ -10,7 +10,8 @@ Inspired by the [MacOS Sonoma](https://www.apple.com/macos/sonoma/) interface.
 
 # Instructions
 
-1. Download required fonts with `dl-fonts.sh`.
+1. Download required fonts with `./dl-fonts.sh`.
+2. Symlink regular user configs with `./ln-user.sh`.
 
 # Configurations
 
