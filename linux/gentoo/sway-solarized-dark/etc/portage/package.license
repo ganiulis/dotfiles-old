@@ -1,0 +1,11 @@
+# Accepting the license for linux-firmware. Details: https://wiki.gentoo.org/wiki/Microcode
+sys-kernel/linux-firmware linux-fw-redistributable
+
+# Accepting any license that permits redistribution. Same as above.
+sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
+
+# Accepting the license for Intel microcode. Details: https://wiki.gentoo.org/wiki/Intel_microcode
+sys-firmware/intel-microcode intel-ucode
+
+# Obsidian has its own license.
+app-text/obsidian::r7l Obsidian-EULA

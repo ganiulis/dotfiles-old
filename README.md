@@ -10,16 +10,12 @@ machines.
 I put up specific files under version control which make sense to me, such as
 customization or lists of packages.
 
-To keep each template consistent, I pull this repository and `ln -s ...`
-specific directories and files.
-
 # Status
 
-Complete templates:
+Available templates:
 
-1. [Linux](linux/common)
-2. [Gentoo Linux](linux/gentoo)
-3. [macOS](macos/common)
+1. [Gentoo Linux](https://www.gentoo.org/) with [SwayWM](https://swaywm.org/) in [Solarized Dark](https://ethanschoonover.com/solarized/) (`sway-solarized-dark`)
+2. [macOS (configured with Sonoma)](https://www.apple.com/macos/sonoma/) (`sonoma`)
 
 Future templates (which I may or may not do) are written-up as [milestones](https://github.com/ganiulis/dotfiles/milestones).
 
@@ -27,15 +23,20 @@ Future templates (which I may or may not do) are written-up as [milestones](http
 
 Each directory is meant to serve as a building block towards a single working system. Each file and directory matches the file and directory of the target system. 
 
-Setting up a functional system is a three-step process (system files, distribution files, and flavour files). Each top-level system directory includes a `README.md` to describe what's included, with instructions.
+Setting up a functional system is a three-step process (system files, distribution files, and flavour files). Each top-level system directory includes a `README.md` to describe what's included.
+
+You can omit any specific configuration file or directory if you know what you're doing. You can explore each directory to find a configuration file you may like and just copy it into your own system.
 
 ## New Way
 
-1. Find your system and distribution (eg.: [linux]() and [linux/gentoo]()).
-2. Run scripts instructed by `{system}/{distribution}/common/README.md` (eg.: [linux/gentoo/common/README.md]()), if one exists.
-3. Run scripts instructed by `{system}/common/README.md` (eg.: [linux/common/README.md]()).
-4. Choose a flavour for your GUI (eg.: [linux/gentoo/sway-solarized-dark]()), if one exists.
-5. Run scripts instructed by `{system}/{distribution}/{flavour}/README.md` (eg.: [linux/gentoo/sway-solarized-dark/README.md]()), if one exists.
+1. Select an available flavour for your distribution and system.
+2. Make the scripts executable with `chmod u+x ln_root.sh` and `chmod u+x ln_user.sh`.
+3. Run `sudo ./ln_root.sh ...` with your chosen flavour (eg.:`sway-solarized-dark`). The script auto-detects your OS.
+4. Update your system.
+5. Run `./ln_user.sh ...` with your chosen flavour.
+6. Log out and log back in.
+
+This method symlinks all configurations together. If there is a demand I will put up a `cp` version.
 
 ## Old Way
 
@@ -45,4 +46,3 @@ Setting up a functional system is a three-step process (system files, distributi
 5. Choose a flavour for your GUI (eg.: [linux/gentoo/sway-solarized-dark]()).
 6. Symlink (`ln -s ...`) or copy files (`cp ... ...`) from `{system}/{distribution}/{flavour}` directory to your system, matching the directory.
 
-You can omit any specific configuration file or directory if you know what you're doing.
