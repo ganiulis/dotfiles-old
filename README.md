@@ -12,7 +12,7 @@ customization or lists of packages.
 
 # Status
 
-available templates:
+Available templates:
 
 1. [Gentoo Linux](https://www.gentoo.org/) with [SwayWM](https://swaywm.org/) in [Solarized Dark](https://ethanschoonover.com/solarized/) (`sway-solarized-dark`)
 2. [macOS (configured with Sonoma)](https://www.apple.com/macos/sonoma/) (`sonoma`)
@@ -30,8 +30,10 @@ You can omit any specific configuration file or directory if you know what you'r
 ## New Way
 
 1. Select an available flavour for your distribution and system.
-1. Run `sudo ./ln_root.sh ...` with your chosen flavour (eg.:`sway-solarized-dark`). The script auto-detects your OS.
-2. Run `./ln_user.sh ...` with your chosen flavour.
+2. Run `sudo ./ln_root.sh ...` with your chosen flavour (eg.:`sway-solarized-dark`). The script auto-detects your OS.
+3. Update your system.
+4. Run `./ln_user.sh ...` with your chosen flavour.
+5. Log out and log back in.
 
 This method symlinks all configurations together. If there is a demand I will put up a `cp` version.
 
