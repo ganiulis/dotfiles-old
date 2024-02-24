@@ -14,7 +14,7 @@ customization or lists of packages.
 
 Available templates:
 
-1. [Debian Linux](https://www.debian.org/) in [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/)
+1. [Debian Linux](https://www.debian.org/)
 2. [Gentoo Linux](https://www.gentoo.org/) with [SwayWM](https://swaywm.org/) in [Solarized Dark](https://ethanschoonover.com/solarized/) (`sway-solarized-dark`)
 3. [macOS](https://www.apple.com/macos/common/)
 
