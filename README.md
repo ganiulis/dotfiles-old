@@ -30,10 +30,11 @@ You can omit any specific configuration file or directory if you know what you'r
 ## New Way
 
 1. Select an available flavour for your distribution and system.
-2. Run `sudo ./ln_root.sh ...` with your chosen flavour (eg.:`sway-solarized-dark`). The script auto-detects your OS.
-3. Update your system.
-4. Run `./ln_user.sh ...` with your chosen flavour.
-5. Log out and log back in.
+2. Make the scripts executable with `chmod u+x ln_root.sh` and `chmod u+x ln_user.sh`.
+3. Run `sudo ./ln_root.sh ...` with your chosen flavour (eg.:`sway-solarized-dark`). The script auto-detects your OS.
+4. Update your system.
+5. Run `./ln_user.sh ...` with your chosen flavour.
+6. Log out and log back in.
 
 This method symlinks all configurations together. If there is a demand I will put up a `cp` version.
 
