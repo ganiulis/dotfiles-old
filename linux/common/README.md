@@ -10,4 +10,4 @@ Terminal utilities:
 
 Development tools:
 
-1. IDE: [NvChad](https://nvchad.com) for [Neovim](https://neovim.io)
+1. IDE: [NvChad](https://nvchad.com) for [Neovim](https://neovim.io) (currently not supported by Debian Linux)
