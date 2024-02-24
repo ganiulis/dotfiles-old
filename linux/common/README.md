@@ -6,7 +6,7 @@ Common configurations available for all distributions.
 
 Terminal utilities:
 
-1. Shell: [Fish](https://fishshell.com/)
+1. Shell: [Zsh](https://www.zsh.org/) with [Zplug](https://github.com/zplug/zplug), [Fish](https://fishshell.com/)
 
 Development tools:
 
