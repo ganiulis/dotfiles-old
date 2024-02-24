@@ -15,7 +15,7 @@ if [ -e $target_dir ]; then
 
 		echo "Removed current symlink for "$target_dir
 	else
-		old_config=$target_dir_old
+		old_config=$target_dir\_old
 
 		if [ -e $old_config ]; then
 			rm -rf $old_config

@@ -1,0 +1,7 @@
+app-text/obsidian::r7l ~amd64
+dev-db/dbeaver-bin::tatsh-overlay ~amd64
+
+dev-cpp/sdbus-c++ ~amd64
+gui-apps/tuigreet ~amd64
+
+dev-util/bash-language-server::guru ~amd64

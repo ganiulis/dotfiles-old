@@ -1,0 +1,36 @@
+sys-libs/zlib minizip
+
+dev-python/PyQt6 quick qml webchannel
+
+media-libs/mesa X
+
+gui-apps/waybar network wifi
+# required by app-text/calibre-6.29.0::gentoo[python_single_target_python3_11]
+# required by @office
+# required by @selected
+# required by @world (argument)
+>=dev-python/pillow-10.2.0 webp
+
+media-libs/libsdl2 gles2
+# required by sys-kernel/gentoo-kernel-6.6.13::gentoo[initramfs]
+# required by @selected
+# required by @world (argument)
+sys-kernel/installkernel dracut
+
+x11-libs/cairo aqua X
+dev-cpp/cairomm X
+
+dev-qt/qtgui:5 -accessibility
+# required by dev-qt/qtwidgets-5.15.12::gentoo[gtk]
+# required by media-video/vlc-3.0.20-r3::gentoo[gui]
+# required by @media
+# required by @selected
+# required by @world (argument)
+x11-libs/gtk+ X
+dev-cpp/gtkmm X
+
+# required by www-client/firefox-115.7.0::gentoo[system-libvpx]
+# required by @net
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvpx-1.13.1-r1 postproc

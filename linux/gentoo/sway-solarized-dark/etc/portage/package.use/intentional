@@ -1,0 +1,3 @@
+media-video/vlc -dvd
+
+gui-wm/sway -swaybar
