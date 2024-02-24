@@ -4,6 +4,10 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
 source $SCRIPT_DIR/functions.sh
 
+function symlink_user {
+	symlink $SCRIPT_DIR$1$2 $HOME$2
+}
+
 case $(get_distro) in
 gentoo)
 	case $1 in
@@ -63,35 +67,32 @@ gentoo)
 		;;
 	esac
 
-	SYSTEM_DIR=$SCRIPT_DIR/linux/common/home/user
 	SYSTEM_TEMPLATE_FILES=(
 		/.config/nvim/lua/custom
-		/.zshrc
-		/.zsh_aliases
+		/.zshrc # TODO: Replace with Fish.
+		/.zsh_aliases # TODO: Replace with Fish.
 	)
 
 	for SYSTEM_TEMPLATE_FILE in ${SYSTEM_TEMPLATE_FILES[@]}; do
-		symlink $SYSTEM_DIR$SYSTEM_TEMPLATE_FILE $HOME$SYSTEM_TEMPLATE_FILE
+		symlink_user /linux/common/home/user $SYSTEM_TEMPLATE_FILE
 	done
 	;;
 darwin)
-	SYSTEM_DIR=$SCRIPT_DIR/macos/common/Users/user
 	SYSTEM_TEMPLATE_FILES=(
 		/.config/fish
 	)
 
 	for SYSTEM_TEMPLATE_FILE in ${SYSTEM_TEMPLATE_FILES[@]}; do
-		symlink $SYSTEM_DIR$SYSTEM_TEMPLATE_FILE $HOME$SYSTEM_TEMPLATE_FILE
+		symlink_user /macos/common/Users/user $SYSTEM_TEMPLATE_FILE
 	done
 	;;
 debian)
-	SYSTEM_DIR=$SCRIPT_DIR/linux/common/home/user
 	SYSTEM_TEMPLATE_FILES=(
 		/.config/fish
 	)
 
 	for SYSTEM_TEMPLATE_FILE in ${SYSTEM_TEMPLATE_FILES[@]}; do
-		symlink $SYSTEM_DIR$SYSTEM_TEMPLATE_FILE $HOME$SYSTEM_TEMPLATE_FILE
+		symlink_user /linux/common/home/user $SYSTEM_TEMPLATE_FILE
 	done
 	;;
 *)
