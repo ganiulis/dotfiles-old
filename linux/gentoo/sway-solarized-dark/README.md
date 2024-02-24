@@ -11,10 +11,10 @@ Inspired by the [MacOS Sonoma](https://www.apple.com/macos/sonoma/) interface.
 # Instructions
 
 1. Update your Gentoo system.
-2. Symlink root user configs with `./ln-root.sh`.
+2. Symlink root user configs with `./ln_root.sh`.
 3. Emerge packages as root user with `emerge -avuDN @world`.
-4. Download required fonts with `./dl-fonts.sh`.
-5. Symlink regular user configs with `./ln-user.sh`.
+4. Download required fonts with `./dl_fonts.sh`.
+5. Symlink regular user configs with `./ln_user.sh`.
 6. Check if packages were symlinked to their correct spots.
 
 I currently do not have a script for copying configs instead of symlinking them.

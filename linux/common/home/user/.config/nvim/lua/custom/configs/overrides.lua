@@ -22,14 +22,10 @@ M.mason = {
   ensure_installed = {
     "lua-language-server",
     "stylua",
-
-    "typescript-language-server",
     "deno",
     "prettier",
     "gopls",
-
-    "clangd",
-    "clang-format",
+    "shfmt",
   },
 }
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+dCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 FONTS_DIR=$SCRIPT_DIR/home/user/.local/share/fonts
 
 wget -O NotoSans.zip https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.013/NotoSans-v2.013.zip
@@ -20,4 +20,3 @@ unzip -d Hack Hack.zip
 rm Hack.zip
 
 mv $SCRIPT_DIR/Hack $FONTS_DIR/Hack
-

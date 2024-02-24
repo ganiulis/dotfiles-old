@@ -8,5 +8,8 @@ app-containers/docker-compose
 sys-cluster/kubectl
 app-admin/helm
 
+# LSP
+dev-util/bash-language-server::guru
+
 # Utilities
 dev-python/virtualenv
