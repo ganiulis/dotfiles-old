@@ -67,33 +67,28 @@ gentoo)
 		;;
 	esac
 
-	SYSTEM_TEMPLATE_FILES=(
-		/.config/nvim/lua/custom
-		/.zshrc # TODO: Replace with Fish.
-		/.zsh_aliases # TODO: Replace with Fish.
-	)
+	if command -v nvim &> /dev/null; then
+		symlink_user /linux/common/home/user /.config/nvim/lua/custom
+	fi
 
-	for SYSTEM_TEMPLATE_FILE in ${SYSTEM_TEMPLATE_FILES[@]}; do
-		symlink_user /linux/common/home/user $SYSTEM_TEMPLATE_FILE
-	done
-	;;
-darwin)
-	SYSTEM_TEMPLATE_FILES=(
-		/.config/fish
-	)
+	if command -v zsh &> /dev/null; then
+		symlink_user /linux/common/home/user /.zsh_aliases 
+		symlink_user /linux/common/home/user /.zshrc
+	fi
 
-	for SYSTEM_TEMPLATE_FILE in ${SYSTEM_TEMPLATE_FILES[@]}; do
-		symlink_user /macos/common/Users/user $SYSTEM_TEMPLATE_FILE
-	done
+	if command -v fish &> /dev/null; then
+		symlink_user /linux/common/home/user /.config/fish
+	fi
 	;;
 debian)
-	SYSTEM_TEMPLATE_FILES=(
-		/.config/fish
-	)
-
-	for SYSTEM_TEMPLATE_FILE in ${SYSTEM_TEMPLATE_FILES[@]}; do
-		symlink_user /linux/common/home/user $SYSTEM_TEMPLATE_FILE
-	done
+	if command -v fish &> /dev/null; then
+		symlink_user /linux/common/home/user /.config/fish
+	fi
+	;;
+darwin)
+	if command -v fish &> /dev/null; then
+		symlink_user /macos/common/Users/user /.config/fish
+	fi
 	;;
 *)
 	echo "Dotfiles for your machine is not supported."
