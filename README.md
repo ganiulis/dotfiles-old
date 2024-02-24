@@ -15,7 +15,7 @@ customization or lists of packages.
 Available templates:
 
 1. [Gentoo Linux](https://www.gentoo.org/) with [SwayWM](https://swaywm.org/) in [Solarized Dark](https://ethanschoonover.com/solarized/) (`sway-solarized-dark`)
-2. [macOS (configured with Sonoma)](https://www.apple.com/macos/sonoma/) (`sonoma`)
+2. [macOS](https://www.apple.com/macos/common/)
 
 Future templates (which I may or may not do) are written-up as [milestones](https://github.com/ganiulis/dotfiles/milestones).
 
