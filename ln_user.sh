@@ -70,24 +70,21 @@ gentoo)
 	if command -v nvim &> /dev/null; then
 		symlink_user /linux/common/home/user /.config/nvim/lua/custom
 	fi
+	;;&
+debian|gentoo)
+	if command -v fish &> /dev/null; then
+		symlink_user /linux/common/home/user /.config/fish
+	fi
 
 	if command -v zsh &> /dev/null; then
 		symlink_user /linux/common/home/user /.zsh_aliases 
 		symlink_user /linux/common/home/user /.zshrc
 	fi
 
-	if command -v fish &> /dev/null; then
-		symlink_user /linux/common/home/user /.config/fish
-	fi
-	;;
-debian)
-	if command -v fish &> /dev/null; then
-		symlink_user /linux/common/home/user /.config/fish
-	fi
 	;;
 darwin)
 	if command -v fish &> /dev/null; then
-		symlink_user /macos/common/Users/user /.config/fish
+		symlink_user /macOS/common/Users/user /.config/fish
 	fi
 	;;
 *)
