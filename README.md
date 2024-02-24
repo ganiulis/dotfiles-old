@@ -12,7 +12,7 @@ customization or lists of packages.
 
 # Status
 
-Scripted templates:
+available templates:
 
 1. [Gentoo Linux](https://www.gentoo.org/) with [SwayWM](https://swaywm.org/) in [Solarized Dark](https://ethanschoonover.com/solarized/) (`sway-solarized-dark`)
 2. [macOS (configured with Sonoma)](https://www.apple.com/macos/sonoma/) (`sonoma`)
