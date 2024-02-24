@@ -84,6 +84,16 @@ darwin)
 		symlink $SYSTEM_DIR$SYSTEM_TEMPLATE_FILE $HOME$SYSTEM_TEMPLATE_FILE
 	done
 	;;
+debian)
+	SYSTEM_DIR=$SCRIPT_DIR/linux/common/home/user
+	SYSTEM_TEMPLATE_FILES=(
+		/.config/fish
+	)
+
+	for SYSTEM_TEMPLATE_FILE in ${SYSTEM_TEMPLATE_FILES[@]}; do
+		symlink $SYSTEM_DIR$SYSTEM_TEMPLATE_FILE $HOME$SYSTEM_TEMPLATE_FILE
+	done
+	;;
 *)
 	echo "Dotfiles for your machine is not supported."
 	;;
