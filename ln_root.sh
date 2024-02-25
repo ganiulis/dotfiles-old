@@ -46,6 +46,15 @@ gentoo)
 	for COMMON_TEMPLATE_FILE in ${DISTRO_TEMPLATE_FILES[@]}; do
 		symlink $DISTRO_SYSTEM_DIR$COMMON_TEMPLATE_FILE $COMMON_TEMPLATE_FILE
 	done
+
+	sudo emaint sync
+	sudo emerge -avuDN --with-bdeps=y @world
+	sudo emerge -ac
+	;;
+debian)
+	sudo apt install fish vim
+	sudo apt remove nano
+	sudo apt autoremove
 	;;
 darwin)
 	echo "Nothing to be done."
