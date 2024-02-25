@@ -52,6 +52,8 @@ gentoo)
 	sudo emerge -ac
 	;;
 debian)
+	sudo apt update
+	sudo apt upgrade
 	sudo apt install fish vim
 	sudo apt remove nano
 	sudo apt autoremove
