@@ -4,18 +4,18 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
 source $SCRIPT_DIR/functions.sh
 
-function symlink_user {
+function symlink_home_config {
 	symlink $SCRIPT_DIR$1$2 $HOME$2
 }
 
-function std_symlink {
+function symlink_linux_configs {
 	if command -v fish &> /dev/null; then
-		symlink_user /linux/common/home/user /.config/fish
+		symlink_home_config /linux/common/home/user /.config/fish
 	fi
 
 	if command -v zsh &> /dev/null; then
-		symlink_user /linux/common/home/user /.zsh_aliases 
-		symlink_user /linux/common/home/user /.zshrc
+		symlink_home_config /linux/common/home/user /.zsh_aliases 
+		symlink_home_config /linux/common/home/user /.zshrc
 	fi
 }
 
@@ -79,17 +79,17 @@ gentoo)
 	esac
 
 	if command -v nvim &> /dev/null; then
-		symlink_user /linux/common/home/user /.config/nvim/lua/custom
+		symlink_home_config /linux/common/home/user /.config/nvim/lua/custom
 	fi
 
-	std_symlink
+	symlink_linux_configs
 	;;
 debian)
-	std_symlink
+	symlink_linux_configs
 	;;
 Darwin)
 	if command -v fish &> /dev/null; then
-		symlink_user /macOS/common/Users/user /.config/fish
+		symlink_home_config /macOS/common/Users/user /.config/fish
 	fi
 	;;
 *)
