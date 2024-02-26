@@ -58,7 +58,7 @@ debian)
 	sudo apt remove nano
 	sudo apt autoremove
 	;;
-darwin)
+Darwin)
 	echo "Nothing to be done."
 	;;
 *)

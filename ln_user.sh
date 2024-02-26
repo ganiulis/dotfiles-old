@@ -9,12 +9,12 @@ function symlink_home_config {
 }
 
 function symlink_linux_configs {
-	if command -v fish &> /dev/null; then
+	if command -v fish &>/dev/null; then
 		symlink_home_config /linux/common/home/user /.config/fish
 	fi
 
-	if command -v zsh &> /dev/null; then
-		symlink_home_config /linux/common/home/user /.zsh_aliases 
+	if command -v zsh &>/dev/null; then
+		symlink_home_config /linux/common/home/user /.zsh_aliases
 		symlink_home_config /linux/common/home/user /.zshrc
 	fi
 }
@@ -78,7 +78,7 @@ gentoo)
 		;;
 	esac
 
-	if command -v nvim &> /dev/null; then
+	if command -v nvim &>/dev/null; then
 		symlink_home_config /linux/common/home/user /.config/nvim/lua/custom
 	fi
 
@@ -88,7 +88,7 @@ debian)
 	symlink_linux_configs
 	;;
 Darwin)
-	if command -v fish &> /dev/null; then
+	if command -v fish &>/dev/null; then
 		symlink_home_config /macOS/common/Users/user /.config/fish
 	fi
 	;;
