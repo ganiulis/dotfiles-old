@@ -8,6 +8,17 @@ function symlink_user {
 	symlink $SCRIPT_DIR$1$2 $HOME$2
 }
 
+function std_symlink {
+	if command -v fish &> /dev/null; then
+		symlink_user /linux/common/home/user /.config/fish
+	fi
+
+	if command -v zsh &> /dev/null; then
+		symlink_user /linux/common/home/user /.zsh_aliases 
+		symlink_user /linux/common/home/user /.zshrc
+	fi
+}
+
 case $(get_distro) in
 gentoo)
 	case $1 in
@@ -70,19 +81,13 @@ gentoo)
 	if command -v nvim &> /dev/null; then
 		symlink_user /linux/common/home/user /.config/nvim/lua/custom
 	fi
-	;;&
-debian|gentoo)
-	if command -v fish &> /dev/null; then
-		symlink_user /linux/common/home/user /.config/fish
-	fi
 
-	if command -v zsh &> /dev/null; then
-		symlink_user /linux/common/home/user /.zsh_aliases 
-		symlink_user /linux/common/home/user /.zshrc
-	fi
-
+	std_symlink
 	;;
-darwin)
+debian)
+	std_symlink
+	;;
+Darwin)
 	if command -v fish &> /dev/null; then
 		symlink_user /macOS/common/Users/user /.config/fish
 	fi
