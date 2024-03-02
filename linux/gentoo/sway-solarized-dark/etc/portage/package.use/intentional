@@ -1,3 +1,5 @@
 media-video/vlc -dvd
 
-gui-wm/sway -swaybar
+# X flag is required for xwayland support so apps such as Postman can work.
+gui-wm/sway -swaybar X
+gui-apps/waybar network wifi

@@ -9,3 +9,5 @@ sys-firmware/intel-microcode intel-ucode
 
 # Obsidian has its own license.
 app-text/obsidian::r7l Obsidian-EULA
+
+dev-util/postman::edgets all-rights-reserved

@@ -1,5 +1,6 @@
 app-text/obsidian::r7l ~amd64
 dev-db/dbeaver-bin::tatsh-overlay ~amd64
+dev-util/postman::edgets ~amd64
 
 dev-cpp/sdbus-c++ ~amd64
 gui-apps/tuigreet ~amd64

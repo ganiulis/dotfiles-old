@@ -7,9 +7,11 @@ app-containers/docker
 app-containers/docker-compose
 sys-cluster/kubectl
 app-admin/helm
+dev-util/postman::edgets
 
 # LSP
 dev-util/bash-language-server::guru
 
 # Utilities
 dev-python/virtualenv
+x11-base/xwayland

@@ -47,7 +47,7 @@ gentoo)
 		symlink $DISTRO_SYSTEM_DIR$COMMON_TEMPLATE_FILE $COMMON_TEMPLATE_FILE
 	done
 
-	sudo emaint sync
+	# sudo emaint sync
 	sudo emerge -avuDN --with-bdeps=y @world
 	sudo emerge -ac
 	;;

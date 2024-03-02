@@ -1,3 +1,4 @@
 */*::r7l
 */*::tatsh-overlay
 */*::guru
+*/*::edgets
