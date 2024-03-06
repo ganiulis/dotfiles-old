@@ -13,3 +13,5 @@ dev-cpp/cairomm X
 x11-libs/gtk+ X
 dev-cpp/gtkmm X
 gui-libs/wlroots X
+media-libs/libepoxy X
+media-libs/libglvnd X
