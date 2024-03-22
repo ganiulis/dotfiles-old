@@ -91,6 +91,10 @@ Darwin)
 	if command -v fish &>/dev/null; then
 		symlink_home_config /macOS/common/Users/user /.config/fish
 	fi
+
+	if command -v nvim &>/dev/null; then
+		symlink_home_config /macOS/common/Users/user /.config/nvim/lua/custom
+	fi
 	;;
 *)
 	echo "Dotfiles for your machine is not supported."
